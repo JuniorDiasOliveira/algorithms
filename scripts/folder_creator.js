@@ -58,5 +58,5 @@ createFolderAndFiles(pathArthur);
 createFolderAndFiles(pathDiogo);
 
 console.log(
-  `Pastas e arquivos criados com sucesso em '${arthur}' e '${diogo}'`
+  `Pastas e arquivos criados com sucesso em arthur e diogo`
 );
