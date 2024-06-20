@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "test:watch": "jest --watch",
+    "test": "jest",
     "generate": "node ./scripts/folder_creator.js",
     "prettier": "prettier"
   },
@@ -20,6 +21,5 @@
     "jest": "^29.7.0",
     "typescript-eslint": "^7.13.1",
     "prettier": "^3.3.2"
-
   }
 }
