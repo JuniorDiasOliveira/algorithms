@@ -23,6 +23,11 @@ Invert String
    Saída: "!gnirts siht trevnI"
 */
 
-const invertString = () => {}
-
-export default invertString
+const invertString = (str) => {
+  let strinvert = "";
+  for (let i = str.length - 1; i >= 0; i--){
+    strinvert += str[i];
+  }
+  return strinvert;
+}
+export default invertString;
