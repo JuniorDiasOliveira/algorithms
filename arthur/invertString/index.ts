@@ -23,6 +23,34 @@ Invert String
    Saída: "!gnirts siht trevnI"
 */
 
-const invertString = () => {}
+// Loop version
+const invertString = (myString) => {
+  if (typeof myString !== 'string') {
+    throw new Error ('myString is not a string')
+  } 
+  let invertedStr = '';
+  for (let i = myString.length - 1; i >= 0; i--) {
+    invertedStr += myString[i];
+    // invertedStr = invertedStr.concat(myString[i])
+  }
+  return invertedStr;
+}
+
+// Split and Reduce version
+// const invertString = (myString) => {
+//   if (typeof myString !== 'string') {
+//     throw new Error ('myString is not a string')
+//   } 
+//   return myString.split('').reduce((invertedStr, char) => char + invertedStr, '');
+// }
+// try {
+//   console.log(invertString("hello")); // "olleh"
+//   console.log(invertString("OpenAI")); // "IAnepO"
+//   console.log(invertString("Invert this string!")); // "!gnirts siht trevnI"
+//   console.log(invertString(123)); // throw an Erro: myString is not a string
+// } catch (error) {
+//   console.error('Erro:', error.message);
+// }
+
 
 export default invertString
